@@ -47,6 +47,7 @@ namespace WebApplication1.Controllers
                 else
                 {
                     base.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                    //he
                 }
                 _hub.SendMessage(postTransfer.to, postTransfer.from, postTransfer.content);
             }
